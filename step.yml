@@ -21,6 +21,21 @@ deps:
 is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
+inputs:
+  - mv_from: null
+    opts:
+      description: |
+        The file you want to move
+      is_required: true
+      summary: From
+      title: From
+  - mv_to: null
+    opts:
+      description: |
+        The place you want the file to be
+      is_required: true
+      summary: To
+      title: To
 outputs:
 - NEW_LOCATION: null
   opts:
