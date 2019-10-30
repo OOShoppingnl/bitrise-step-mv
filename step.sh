@@ -17,4 +17,4 @@ fi
 
 mv $mv_from $mv_from
 
-envman add --key NEW_LOCATION -- value $mv_from
+envman add --key NEW_LOCATION --value $mv_from
