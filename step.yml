@@ -1,0 +1,28 @@
+title: Move
+summary: This moves file(s) rustig
+description: This moves file(s) rustig
+published_at: 2019-10-30T12:07:20.751143473Z
+website: https://hatsa.com
+source:
+  git: https://github.com/OOShoppingnl/bitrise-step-mv.git
+  commit: edfe20af6f02454977723396e9f6a98889462db8
+host_os_tags:
+- osx-10.11
+type_tags:
+- artifact-info
+toolkit:
+  bash:
+    entry_file: step.sh
+deps:
+  brew:
+  - name: git
+  apt_get:
+  - name: git
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+outputs:
+- NEW_LOCATION: null
+  opts:
+    summary: The new file location
+    title: The new file location
