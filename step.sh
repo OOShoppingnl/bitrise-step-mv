@@ -6,8 +6,6 @@ File_Name=$(basename "$mv_from")
 Dir_Path="${mv_from/$File_Name}"
 Dir_Path=${Dir_Path%?}
 
-echo $Dir_Path
-
 if [[ -d "$Dir_Path" ]]; then
   echo "$Dir_Path exists"
   else
@@ -17,4 +15,4 @@ fi
 
 mv "${mv_from}" "${mv_from}"
 
-envman add --key NEW_LOCATION -- value $mv_from
+envman add --key NEW_LOCATION --value $mv_to
