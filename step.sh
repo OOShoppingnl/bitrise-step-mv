@@ -13,6 +13,9 @@ if [[ -d "$Dir_Path" ]]; then
   echo "Created directory: $Dir_Path"
 fi
 
-mv "${mv_from}" "${mv_from}" 2>/dev/null
+if [$mv_from != $mv_to]
+then
+mv "${mv_from}" "${mv_from}"
+fi
 
 envman add --key NEW_LOCATION --value $mv_to
